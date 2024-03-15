@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wlc-img{
+    height: 100vh;
+    background-image: url("/IMAGE/freestocks-_3Q3tsJ01nc-unsplash.jpg " );
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 40
+}
+
+/* 
+nav{
+    height: 14vh;
+    color: white !important;
+} */
+
+.nav-items{
+    color: rgb(92, 30, 30);
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    position: absolute;
+    height: 12vh;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-items ul{
+    list-style-type: none;
+    display: flex;
+}
+
+
+
+.nav-items a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: rgb(92, 30, 30);
+    font-weight: 500;
+}
+
+.nav-items h1{
+    margin-left: 3%;
+    display: flex;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.discover-more:hover{
+    color: rgb(255, 154, 31) !important;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    font-size: 14px;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-items{
+        display: none;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .nav-bar{
+        display: none;
+    }
+
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+
+    .nav-bar-mobile{
+        height: 10vh;
+    }
+
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(45, 22, 22);
+        background-color: rgba(42, 19, 17, 0.982);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color:rgba(173, 135, 55, 0.954);
+      }
+      
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+}
+
+@media only screen and (min-width:601px) {
+    .nav-bar-mobile{
+        display: none !important;
+    }
+    
+    .overlay-content{
+        display: none !important;
+    }
+
+    .closebtn{
+        display: none !important; 
+    }
+}
